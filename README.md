@@ -1,19 +1,29 @@
 # Python Environment Setup #
 ### Create Python Virtual Environment ###
-
+To create a virtual environment in Python, you can use the following command:
 ```bash 
  python3 -m venv venv
 ```
+To activate the venv, For MacOS and Linux:
 ```bash 
 source venv/bin/activate
+```
+For windows
+```bash
+venv\Scripts\activate
 ```
 To deactivate 
 ```bash 
 deactivate
 ```
-To remove the venv 
+To remove the venv:
+For MacOS and Linux
 ```bash
 rm -rf venv
+```
+For Windows
+```bash
+rmdir venv
 ```
 
 ### Install dependencies  ###
