@@ -1,6 +1,6 @@
 import re
-
 import requests
+
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -41,7 +41,6 @@ def step_i_navigate_to_the_url(context):
 @step('I should see the CSP header')
 def step_see_csp_header(context):
     assert context.csp_header is not None, "CSP header not found"
-    print("CSP Header found:", context.csp_header)
 
 
 @then("I should see the score is a number between 0 and 100")
