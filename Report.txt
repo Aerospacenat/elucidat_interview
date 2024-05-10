@@ -1,0 +1,72 @@
+	HOME:001 - The score should be set from 0 to 100
+	Summary:
+	As the user starts the score can be seen, however, the score is stated as the current date
+	Visual proof: See docx
+
+	Environment:
+	MacBook Pro 2021 M1 Max
+macOS Ventura 13.6
+	Chrome Version 123.0.6312.107
+	Source URL:
+https://learning.elucidat.com/course/5c9126fd760e5-611a53751213a
+	Steps to reproduce:
+	1. On the landing page Click Start
+	2. Check that the next page is Finding the Truth
+	3. Visually check the score value
+	Expected vs. actual results
+	Expected:
+	0 to 100
+	Actual:
+	Score is 5/6/24
+
+
+	HOME:002 - The burger menu isn’t available from the first few pages
+	Summary:
+	As the user starts the burger menu isn’t available until the user initially gives a verdict. The user will want to access the menu at the start so that they don’t need to change their progress.
+	Visual proof: See docx
+
+	Environment:
+	MacBook Pro 2021 M1 Max
+macOS Ventura 13.6
+	Chrome Version 123.0.6312.107
+	Source URL:
+https://learning.elucidat.com/course/5c9126fd760e5-611a53751213a
+	Steps to reproduce:
+	1. On the landing page Click Start
+	2. Check that the next page is Finding the Truth
+	3. Visually check the upper right
+	Expected vs. actual results
+	Expected:
+	Burger Menu
+	Actual:
+	No burger menu available
+
+
+	HOME:003 - No Content Security Policy (CSP) header available on the landing page
+	Summary:
+	When monitoring the Network Tab in the Developer tools no Content Security Policy is available when landing on the starting page. CSP is an added layer of security that helps to detect attacks like Cross-Site Scripting and data injection attacks.
+
+	Visual proof: See docx
+
+	Environment:
+	MacBook Pro 2021 M1 Max
+macOS Ventura 13.6
+	Chrome Version 123.0.6312.107
+	Source URL:
+https://learning.elucidat.com/course/5c9126fd760e5-611a53751213a
+	Steps to reproduce:
+	1. On a new tap or incognito Open Developer Tools (F12) or right-click and inspect
+	2. Click on the network tab
+	2. Enter the URL https://learning.elucidat.com/course/5c9126fd760e5-611a53751213a
+	3. Click on the first object in the tab
+	4. Check that there is a 200 response code
+	5. Scroll down on the right-hand side
+	6. Look for Content-Security-Policy in the Response Headers
+	Expected vs. actual results
+
+	Expected:
+	Content-Security-Policy: frame-ancestors 'self' *.elucidat.com
+	The above as per other objects
+
+	Actual:
+	No Content-Security-Policy available
