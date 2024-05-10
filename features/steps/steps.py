@@ -8,8 +8,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
-@given('the URL for environment "{env}" is "{url}"')
-def step_the_URL_is(context, env, url):
+@given('the URL for environment is "{url}"')
+def step_the_URL_is(context, url):
     """
     Environment URL is stored in the context object
     """
